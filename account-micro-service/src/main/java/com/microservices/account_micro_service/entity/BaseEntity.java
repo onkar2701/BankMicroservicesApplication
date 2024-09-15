@@ -15,7 +15,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
-@MappedSuperclass
+@MappedSuperclass  //This indicates that this class will act as super class for all other subclasses
 @EntityListeners(AuditingEntityListener.class)
 @Getter @Setter @ToString
 public class BaseEntity {
