@@ -1,10 +1,10 @@
-package com.microservices.loans_micro_service;
+package com.eazybytes.loans;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LoansMicroServiceApplicationTests {
+class LoansApplicationTests {
 
 	@Test
 	void contextLoads() {

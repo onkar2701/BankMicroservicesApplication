@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="loans-micro-service" />
+        <module name="account-micro-service" />
+        <module name="cards-micro-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cards" target="20" />
+      <module name="loans" target="20" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account-micro-service" options="-parameters" />
+      <module name="cards" options="-parameters" />
+      <module name="cards-micro-service" options="-parameters" />
+      <module name="loans" options="-parameters" />
+      <module name="loans-micro-service" options="-parameters" />
+    </option>
+  </component>
+</project>
