@@ -1,13 +1,12 @@
+
+#base image information
 FROM openjdk:17-jdk-slim
 
-#Information around who maintains this image
-MAINTAINER onkar2701.com
+#container maintainer information
+MAINTAINER LABEL onkar2701.com
 
-#copy data from local file system to docker container
-#add app jar to image
-COPY target/account-micro-service-0.0.1-SNAPSHOT.jar account-micro-service-0.0.1-SNAPSHOT.jar
+#copy file from local system to docker container file system
+COPY /target/account-micro-service-0.0.1-SNAPSHOT.jar account-micro-service-0.0.1-SNAPSHOT.jar
 
-# execute the application
-# run this command in this docker container
+#command that needs to be executed when we start/ run a docker container
 ENTRYPOINT ["java","-jar","account-micro-service-0.0.1-SNAPSHOT.jar"]
-

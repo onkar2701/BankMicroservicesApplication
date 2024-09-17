@@ -8,13 +8,14 @@
 		<version>3.3.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.eazybytes</groupId>
+	<groupId>com.microservices</groupId>
 	<artifactId>loans-micro-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>loans</name>
+	<packaging>jar</packaging>
 	<description>Microservice for Loans</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
