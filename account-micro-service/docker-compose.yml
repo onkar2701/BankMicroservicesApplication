@@ -1,0 +1,42 @@
+services:
+  accounts-micro-service:
+    image: onkar2701/accounts:v5
+    container_name: onkar-accounts-container
+    ports:
+      - 8080:8080
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - onkar2701
+
+  loans-micro-service:
+    image: onkar2701/loans:v5
+    container_name: onkar-loans-container
+    ports:
+      - 8080:8080
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - onkar2701
+
+  cards-micro-service:
+    image: onkar2701/cards:v5
+    container_name: onkar-cards-container
+    ports:
+      - 8080:8080
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+
+    networks:
+      - onkar2701
+
+networks:
+  onkar2701:
+    driver: "bridge"
+
